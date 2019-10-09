@@ -24,20 +24,20 @@ bodyClass: page-contact
     <div class="col-12 col-md-8">
       
       
-      <form id="fs-frm" name="trouble-ticket" accept-charset="utf-8" action="https://formspree.io/ticket@eggpi.com" method="post">
+     <form id="fs-frm" name="trouble-ticket" accept-charset="utf-8" action="https://formspree.io/ticket@eggpi.com" method="post">
   <fieldset id="fs-frm-inputs">
-    <label for="company-name">Company Name</label>
-    <input type="text" name="name" id="company-name" placeholder="Company Name" required="">
+    <label for="company">Company Name</label>
+    <input type="text" name="company" id="company" placeholder="Company Name" required="">
     <label for="full-name">Your Name</label>
     <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@company.com" required="">
+    <label for="email">Email Address</label>
+    <input type="email" name="replyto" id="email" placeholder="email@company.com" required="">
     <label for="phone">Phone Number</label>
-    <input type="text" name="name" id="company-name" placeholder="XXX-XXX-XXXX" required="">     <label for="message">Issue</label>
+    <input type="text" name="phone" id="phone" placeholder="XXX-XXX-XXXX" required="">     <label for="message">Issue</label>
     <textarea rows="5" name="message" id="message" placeholder="A brief description of the issue." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    <input type="hidden" name="severity" id="severity" value="Contact Form Submission">
    <label for="severity">Severity
-      <select name="ticket-severity">
+      <select name="severity">
   <option value="normal">Normal</option>
   <option value="low">Low</option>
   <option value="high">High</option>
@@ -138,61 +138,18 @@ bodyClass: page-contact
 </style>
 
       
-      
-      
+     
+       
+       
       <ul>
+        </br>
+        </br>
+      <h4 class="mt-4">>Alternate Ways to Reach Us:</h4>
         <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
         <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
             {{ site.data.contact.email }}</a></li>
-        {% if site.data.contact.address %}
-        <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
-        {% endif %}
       </ul>
-      <h4 class="mt-4">Business Hours</h4>
-      <table class="table table-sm opening-hours-table">
-        <tr>
-          <td class="day font-weight-bold">Monday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Tuesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Wednesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Thursday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Friday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Saturday</td>
-          <td class="opens">Closed</td>
-          <td></td>
-          <td class="closes"></td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Sunday</td>
-          <td class="opens">Closed</td>
-          <td> </td>
-          <td class="closes"></td>
-        </tr>
-      </table>
+      
     </div>
   </div>
 </div>
