@@ -14,7 +14,13 @@ bodyClass: page-contact
   </div>
 </div>
 
-<form id="fs-frm" name="trouble-ticket" accept-charset="utf-8" action="https://formspree.io/ticket@eggpi.com" method="post">
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      
+      
+      <form id="fs-frm" name="trouble-ticket" accept-charset="utf-8" action="https://formspree.io/ticket@eggpi.com" method="post">
   <fieldset id="fs-frm-inputs">
     <label for="company-name">Company Name</label>
     <input type="text" name="name" id="company-name" placeholder="Company Name" required="">
@@ -127,18 +133,9 @@ bodyClass: page-contact
 }
 </style>
 
-
-
-
-
-
-
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-md-8">
+      
+      
+      
       <ul>
         <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
         <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
