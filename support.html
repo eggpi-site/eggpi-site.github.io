@@ -35,7 +35,7 @@ bodyClass: page-contact
     <label for="phone">Phone Number</label>
     <input type="text" name="phone" id="phone" placeholder="XXX-XXX-XXXX" required="">     <label for="message">Issue</label>
     <textarea rows="5" name="message" id="message" placeholder="A brief description of the issue." required=""></textarea>
-    <input type="hidden" name="severity" id="severity" value="Contact Form Submission">
+    <input type="hidden" name="severity" id="severity">
    <label for="severity">Severity
       <select name="severity">
   <option value="normal">Normal</option>
@@ -141,14 +141,13 @@ bodyClass: page-contact
      
        
        
-      <ul>
-        </br>
-        </br>
-      <h4 class="mt-4">>Alternate Ways to Reach Us:</h4>
-        <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
-            {{ site.data.contact.email }}</a></li>
-      </ul>
+     
+</br></br>
+   <h4 class="mt-4">Alternate Ways to Reach Us:</h4>
+     <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
+     <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
+         {{ site.data.contact.email }}</a></li>
+    
       
     </div>
   </div>
