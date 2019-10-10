@@ -1,5 +1,5 @@
 ---
-title: "Technology Training"
+title: "Training"
 image: "/services/default.png"
 ---
 
